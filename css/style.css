@@ -1,0 +1,445 @@
+
+	* {
+		margin:0;
+		padding:0;}
+	
+	html {font-size: 10px;}
+	
+	body{
+		font-size: 1.6rem;
+	    font-family: 'OpenSans', sans-serif;}     /* la fuente elegida en google fonts*/
+	
+	
+	/*.section{
+		height:100vh;
+		
+	}*/
+	
+	/******* header*******/
+	
+	
+	@font-face {
+        font-family: openSans;
+        src: url(fuente/Open_Sans/OpenSans-Regular.ttf); }	
+	
+	header{
+		background-color: rgba(0,0,0,.3);   /*  LE DAMOS UN COLOR Y .3 ( 30% OPACIDAD ) */
+		height: 100vh;     /* PONEMOS EL HEADER A 100vh */
+		position:relative;
+		margin-bottom:0rem;
+	}
+	
+	header::before {
+	
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;	
+	display: block;
+	background-image: url(../img/aceite.jpg);
+	background-size: cover;
+	height: 100vh;
+}
+   
+	div.posicion{
+		  position:relative;
+		  margin:auto;
+		  top:2rem;
+		  width:90vw;
+		  height:20rem;
+		  
+	}
+	
+	/* MENU NAVEGACIÓN */
+	
+	nav{
+		width:70%;
+		position: absolute;
+		right:0;
+		top:0;}
+	
+	nav ul { 
+	    list-style-type: none; 
+	    font-size:1.6rem;
+		font-weight: bold;
+		padding:1.2rem;
+		border-radius:0.8rem;
+		border: 0.2rem solid #4CAF50;
+		
+		background-color: #FFA500;}
+
+	nav li {
+		display: inline-block;
+		width: calc((100% - 3*1%)/5);
+						}
+
+	nav li a { 
+		display: block;
+		color: black;
+		text-align: center;
+		padding: 0.5rem 0.5rem;
+		text-decoration: none;}
+
+	nav li a:hover {
+		 border-radius:0.8rem;
+		 background-color:#C0C0C0;}
+
+	nav li a.active { color: black; 
+	     border-radius:0.8rem;
+		 background-color:#FF540C;}
+		 
+		 /*LOGOTIPO*/
+			
+	.logotipo{
+		position:absolute;
+		top:0;
+		left:0;
+		width:20rem;
+		height:12rem;
+		
+	}
+		
+	.logotipo img{
+		height:100%;
+		width:100%;
+		}
+		
+		/*TITULO*/
+		
+	.titulo{
+		font-weight:bold;
+		font-size:2.8rem;
+		color:#FF0000;
+		position: absolute;
+		top: 20rem;
+		left: 3rem;
+	
+	}
+
+	.titulo{
+
+	  position: absolute;
+	  -webkit-animation-name: titulo;
+	  -webkit-animation-duration: 4s;
+	  animation-name: example;
+	  animation-duration: 4s;
+	}
+
+	@-webkit-keyframes example {
+	 /* 25%  { left:40rem; top:300rem;}*/
+	  100% { left:40rem; top:300rem;}
+	}
+
+	@keyframes example {
+	  25%  { left:30rem; top:15rem;}
+	  /*100% { left:4rem; top:15rem;}*/
+	}
+     
+	 /*BOTONES*/
+
+	.botones{ 
+		position: absolute;
+		bottom: 15%;
+		left:1.5rem;
+		display:inline-block;}
+	
+	
+		
+	.button{
+		background-color: #FFA500;
+		border-radius:8rem;
+		box-shadow: 0.2rem 0.5rem #4CAF50;
+		font-size:2.6rem;
+		margin:0.2rem 0.2rem;
+		padding:0.3rem 1rem;
+		cursor:pointer;
+		border:none;
+	    outline:none;
+		
+	            }
+				
+	.button:hover {
+        background-color: #C0C0C0; 
+	    color: black;
+		transition:0.8s;
+	    outline:none;
+	}
+		
+	.button:active{
+		background-color: #FF540C;
+		outline:none;
+	}
+	
+	/* SECCION 2*/
+
+	.sectioncolor{
+		padding:2.5rem 7rem 7.5rem;
+		background-color:#DCDCDC;
+				
+	}
+	
+	/******** ICONOS ********/
+	.columna{
+		text-align:center;
+		display: inline-block;
+	}
+	
+	.icono{
+		color:#0000FF;
+		font-size:4rem;
+	}
+	
+	 h2, h3, h4, h5, h6{
+		padding-top:1.6rem;
+		padding-bottom:1rem;
+		text-align: center;
+		font-size: 4rem;
+		font-style: italic;
+	    }
+		
+		
+		
+	p{
+		font-weight: bold;
+		font-style:italic;
+		font-size:3rem;
+		text-align: center;
+		padding:2rem;
+		line-height:2.8rem;
+			
+	}
+	
+    .btn{
+		 
+		  font-weight: bold;
+		  font-style:italic;
+		  color:black;
+		  padding: 1rem 2rem;
+		  font-size: 2rem;
+		  cursor: pointer;
+	      display: inline-block;}
+									
+		
+    .btn:hover{
+		  background-color:#2196F3;
+          color:#DCDCDC;
+	      transition:0.8s;
+		  opacity:3}
+		  
+		  
+		/*SECCION 3*/
+   
+     /*****GALERIA******/   
+   
+    #galeria{
+		padding: 2.5rem 7rem 7.5rem;
+		background-color:#ADD8E6;
+		
+	}
+	/* todas las imagenes*/
+	
+	.container{
+		display:grid;
+		grid-template-columns:repeat(5,1fr); /* repeat(cuantas veces, ancho columna)*/
+		grid-template-rows:repeat(4, 20rem);
+		grid-gap:1rem;
+	}
+	
+	.container div {  /* transition */
+		
+		display: flex;
+		transition: transform 0.5s;
+	}
+	
+	.container div:hover{    /* hover*/
+		transform: scale(1.2);
+	}
+	
+	.container div:first-child{  /* la primera imagen ocupa 3 columnas y dos filas */
+		grid-column: span 3;
+		grid-row: span 2;
+		border: 0.3rem solid #DC143C;
+	}
+	
+	img{                  /* tamaño de la imagen y object-fit:cover lo cubre todo */
+		width: 100%;
+		height:100%;
+		object-fit:cover;
+		
+	}	
+	
+		
+	/*SECCION 4*/
+	
+	#piramide {
+		padding: 2.5 7rem 5rem;
+		background-color:#DCDCDC;
+		font-size:0.5rem;
+		
+	}
+	
+	 
+	 
+	.parrafo{    /* parrafos de las columnas */   
+		text-indent:4rem;
+		font-size:1.9rem;
+		line-height:3.5rem;
+		text-align: justify;
+		
+				
+	}
+	
+	/*SECCION 5*/
+	
+	
+	.reproductor {  /* contenedor principal*/
+		position:relative;
+		width:100%;
+		height:100vh;
+		background: rgba(255,255,255, 0.5);
+		background-color:rgba(255, 99, 71, 0.5);
+	}
+	
+	.reproductor-video {  /*contenedor video*/
+		position: absolute;
+		width:100%;
+		height:100vh;
+		z-index:-1;
+		overflow: hidden;
+		top:0;
+	}
+	
+	.reproductor-video video {  /* tamaño del video */
+		width:100%;
+		height:100%;
+		object-fit: cover;
+	}
+	
+	.img-naranja{      /* tamaño imagen de la naranja en la columna */
+		
+		width:50%;
+		height:50%;
+		margin: 0 auto;
+	}
+	
+	.img-naranja img {  /* borde de la imagen naranja */
+		border-radius:5rem;
+		
+	}
+	
+	/*SECCION 6*/
+	
+	/*****FORMULARIO*****/
+	
+	#contacto{
+	
+	height:80vh; 	
+	background-color:#ADD8E6;
+	}
+	
+	/* estilos en input*/
+	
+		
+	input[type=submit] {
+	  display:block;
+	  width: 20%;
+	  background-color: #2196F3;
+	  color:white;
+	  font-weight:bold;
+	  padding: 2rem 4rem;
+	  margin: 4rem 9rem 0rem;
+	  border: none;
+	  border-radius:0.4rem;
+	  cursor: pointer;
+	  
+	}
+	
+	input[type=text], select {
+	  width: 90%;
+	  padding: 1.2rem 2rem;
+	  margin: 0.8rem 0;
+	  display: inline-block;
+	  border: 0.1 solid #ccc;
+	  border-radius: 0.4rem;
+	  box-sizing: border-box;
+	}
+	
+	input[type=submit]:hover {
+	  background-color:#0000CD;
+	}
+	
+	/* estilos en label*/
+	
+	.colum1-form>*{
+		font-weight: 700;
+		display:block;
+		text-align:center;
+		margin:2.6rem 0;
+	}
+	
+	/*SECCION 7*/
+	
+	/*****footer*****/
+		
+	footer{
+		
+		height:20vh; 
+		position: relative;
+		background-color:#848888;
+	
+	}
+	
+	.use{
+		position:absolute;
+		bottom:0;
+	}
+	
+	.use img {
+		width:4%;
+		height:4%
+		margin: 0 auto;
+	}
+	
+	.use p {
+		font-size:1.8rem;
+		display: inline-block;
+		color:black; 
+		padding-bottom:0.3rem;
+	}
+	
+	/******redes******/
+	
+	.redes{
+		float:right;
+		display:block;
+	}
+	
+	.redes icono{
+		top:5rem;
+		width:15%;
+	}
+	.redes p{
+		padding-top:1rem;
+		font-size:1.8rem;
+		line-height:2rem;
+		margin-right:2rem;
+		color: black; 
+	}
+	
+		
+	
+		
+	
+	
+	
+	
+	
+	
+	
+	
+				  
+
+	
