@@ -1,0 +1,170 @@
+
+
+
+@media only screen and (max-width: 1200px){
+		
+	body{font-size: 1.6rem;}
+
+  h1{font-size:4.6rem;}
+  h2{font-size:4rem;}
+  h3{font-size:3rem;}
+	h4{font-size:3rem;}	
+	
+	.col-2-of-3{
+		width:100%;
+		display:block;
+		float:none;
+		margin: 0;
+			
+	}
+}
+		
+@media only screen and (max-width: 900px){
+	
+   body{font-size: 1.4rem;}
+	
+   h1{font-size:4.6rem;}
+   h2{font-size:4rem;}
+   h3{font-size:3rem;}
+   h4{font-size:3rem;}	
+   
+   nav{
+		width:100%;
+		position: absolute;
+		right:0;
+		top:0;}
+   
+   .container{
+		display:grid;
+		grid-template-columns:repeat(3,1fr); /* repeat(cuantas veces, ancho columna)*/
+		grid-template-rows:repeat(9, 20rem);
+	}
+	
+	.row .col-1-of-4 {
+		width:48%;
+		margin: 0;
+		display:inline-block;
+		float:none;
+	}
+	
+	.row .col-1-of-4 *{
+		display:block;  /*coloca todos los elementos en bloque, ya que se mostraban desordenados*/
+	}
+	
+	.row .col-1-of-2 {
+		width:100%;
+		display:block;
+		float:none;
+	}
+	.row .col-1-of-3 {
+		width:100%;
+		display:block;
+		float:none;
+		margin: 0;
+		
+	}
+	
+	.img-naranja{      /* tamaño imagen de la naranja en la columna */
+		
+		width:25rem;
+		height:15rem;
+		margin: 0 auto;
+	}
+	
+		
+	
+	.col-2-of-3{
+		width:50%;
+		display:block;
+		float:none;
+		margin: 0;
+		
+	}
+	
+	.use{
+		position: initial;
+	}
+
+	.use>*{
+		display: block;
+	}
+
+	.redes{
+		float:none;
+	}
+
+	.redes .enlaces {
+		width: 42%;
+		margin:0 auto;
+	}
+
+	.use-img {
+		width:5rem;
+		height:5rem;
+	}
+	
+
+}		
+		
+@media only screen and (max-width: 600px){
+	
+	body{font-size: 1.2rem;}
+	
+	h1{font-size:4.6rem;}
+    h2{font-size:4rem;}
+    h3{font-size:3rem;}
+    h4{font-size:3rem;}
+	
+	 nav{
+		width:100%;}
+	
+	.container{
+		display:grid;
+		grid-template-columns:1fr; /* repeat(cuantas veces, ancho columna)*/
+		grid-template-rows:repeat(20, 20rem);
+	}
+	
+	.container div:first-child{  /* la primera imagen ocupa 3 columnas y dos filas */
+		grid-column: span 1;
+		grid-row: span 1;
+	}
+	
+	.row .col-1-of-4 {
+		display:block;
+		float:none;
+		width:100%;
+	}
+	
+	.row .col-1-of-2 {
+		width:100%;
+		display:block;
+		float:none;
+	}
+	.row .col-1-of-3 {
+		width:100%;
+		display:block;
+		float:none;
+		margin: 0;
+		
+	}
+	
+	/* .img-naranja{      /* tamaño imagen de la naranja en la columna */
+		
+		width:30%;
+		height:30%;
+		margin: 0 auto;
+	} */
+	
+	
+    .col-2of-3{
+		width:100%;
+		display:block;
+		float:none;
+		margin: 0;
+		
+	}
+	
+	#contacto .row{
+		margin-top: 1rem; 
+	}
+}
