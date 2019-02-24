@@ -55,48 +55,7 @@
 		  
 	}
 	
-	/* MENU NAVEGACIÓN */
-	
-	nav{
-		width:70%;
-		position: absolute;
-		right:0;
-		top:0;
-	}
-	
-	nav ul { 
-	  list-style-type: none; 
-	  font-size:1.6rem;
-	  font-weight: bold;
-	  padding:1.2rem;
-	  border-radius:0.8rem;
-	  border: 0.2rem solid #4CAF50;
-	  background-color: #FFA500;
-	 }
-
-	nav li {
-		display: inline-block;
-		width: calc((100% - 3*1%)/5);
-	}
-
-	nav li a { 
-		display: block;
-		color: black;
-		text-align: center;
-		padding: 0.5rem 0.5rem;
-		text-decoration: none;
-	}
-
-	nav li a:hover {
-		 border-radius:0.8rem;
-		 background-color:#C0C0C0;
-	}
-
-	nav li a.active { color: black; 
-	     border-radius:0.8rem;
-		 background-color:#FF540C;
-	}
-		 
+			 
 		 /*LOGOTIPO*/
 			
 	.logotipo{
