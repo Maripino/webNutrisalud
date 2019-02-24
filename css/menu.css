@@ -1,0 +1,58 @@
+.menu-cont {
+    position: relative;
+}
+
+.menu-boton, .menu-boton-label {
+    display: none;
+}
+
+@media only screen and (max-width: 900px){
+    html {
+        /* Para que no aparezca el scroll horizontal al ocultar el menú */
+        overflow-x: hidden;
+    }
+
+    .menu-boton-label {
+        display: initial;
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-radius: 0.8rem;
+        border: 0.2rem solid #4CAF50;
+        background-color: #FFA500;
+        width: 5rem;
+		height: 5rem;
+		text-align: center;
+    }
+
+    .menu-boton-label i {
+        font-size: 2rem;
+        /* Para que el icono se centre */
+        position: relative;
+		top: calc(50% - 10px);
+    }
+
+    .menu-boton-label:hover {
+        cursor: pointer;
+    }
+
+    .menu {
+        top: 5.5rem;
+        width: 100%;
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+        right: -105%;
+        /* z-index: 1; */
+    }
+
+    .menu li {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Para que el menú aparezca cuando el botón check esté en estado checked */
+    .menu-cont .menu-boton:checked ~ .menu {
+        right: 0;
+    }
+}

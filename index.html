@@ -10,9 +10,11 @@
 		
 		<link rel="icon" href="img/manzana2.png"/>
 		<link rel="stylesheet" href="css/style.css"/>
+		<link rel="stylesheet" href="css/menu.css"/>
 		<link rel="stylesheet" href="css/grid.css"/>
 		<link rel="stylesheet" href="css/media.css"/>
 		<link rel="stylesheet" href="css/icon_fonts/css/fontello.css"/>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	</head>
 	
 	<body>
@@ -25,17 +27,19 @@
      			<span class="logotipo"><img src="img/logotipo.png" alt="logotipo"/></span>
 				 
 					<!--MENÚ NAVEGACIÓN-->
-					
-					<nav>
-						 <ul>
-						  <li><a class="active" href="#nutrisalud">Nutrisalud</a></li>
-						  <li><a href="#galeria">Galería</a></li>
-						  <li><a href="#piramide">Dieta Mediterranea</a></li>
-						  <li><a href="#video">Multimedia</a></li>
-						  <li><a href="#contacto">Contáctanos</a></li>   <!-- se pone la id del elemento-->
-						</ul>
-									
-					</nav>
+					<div class="menu-cont">
+						<input class="menu-boton" id="boton-menu" type="checkbox">
+						<label class="menu-boton-label" for="boton-menu"><i class="fas fa-ellipsis-h"></i></label>
+						<nav class="menu">
+							<ul>
+								<li><a class="active" href="#nutrisalud">Nutrisalud</a></li>
+								<li><a href="#galeria">Galería</a></li>
+								<li><a href="#piramide">Dieta Mediterranea</a></li>
+								<li><a href="#video">Multimedia</a></li>
+								<li><a href="#contacto">Contáctanos</a></li>   <!-- se pone la id del elemento-->
+							</ul>
+						</nav>
+					</div>
 					 <!--FIN MENÚ NAVEGACIÓN-->
 					 
 					 <!--TÍTULO-->
