@@ -1,28 +1,28 @@
 
 	* {
 		margin:0;
-		padding:0;}
+		padding:0;
+	}
 	
-	html {font-size: 10px;}
+	html {font-size: 10px;
+	
+	}
 	
 	body{
 		font-size: 1.8rem;
-	    font-family: 'OpenSans', sans-serif;}     /* la fuente elegida en google fonts*/
+	    font-family: 'OpenSans', sans-serif;  /* la fuente elegida en google fonts*/
 		
+	}     
 		
 	
-	
-	/*.section{
-		height:100vh;
-		
-	}*/
 	
 	/******* header*******/
 	
 	
 	@font-face {
         font-family: openSans;
-        src: url(fuente/Open_Sans/OpenSans-Regular.ttf); }	
+        src: url(fuente/Open_Sans/OpenSans-Regular.ttf);		
+	}	
 	
 	header{
 		background-color: rgba(0,0,0,.3);   /*  LE DAMOS UN COLOR Y .3 ( 30% OPACIDAD ) */
@@ -44,7 +44,7 @@
 	background-image: url(../img/aceite.jpg);
 	background-size: cover;
 	height: 100vh;
-}
+	}
    
 	div.posicion{
 		  position:relative;
@@ -61,17 +61,18 @@
 		width:70%;
 		position: absolute;
 		right:0;
-		top:0;}
+		top:0;
+	}
 	
 	nav ul { 
 	  list-style-type: none; 
 	  font-size:1.6rem;
-		font-weight: bold;
-		padding:1.2rem;
-		border-radius:0.8rem;
-		border: 0.2rem solid #4CAF50;
-		
-		background-color: #FFA500;}
+	  font-weight: bold;
+	  padding:1.2rem;
+	  border-radius:0.8rem;
+	  border: 0.2rem solid #4CAF50;
+	  background-color: #FFA500;
+	 }
 
 	nav li {
 		display: inline-block;
@@ -83,15 +84,18 @@
 		color: black;
 		text-align: center;
 		padding: 0.5rem 0.5rem;
-		text-decoration: none;}
+		text-decoration: none;
+	}
 
 	nav li a:hover {
 		 border-radius:0.8rem;
-		 background-color:#C0C0C0;}
+		 background-color:#C0C0C0;
+	}
 
 	nav li a.active { color: black; 
 	     border-radius:0.8rem;
-		 background-color:#FF540C;}
+		 background-color:#FF540C;
+	}
 		 
 		 /*LOGOTIPO*/
 			
@@ -107,7 +111,7 @@
 	.logotipo img{
 		height:100%;
 		width:100%;
-		}
+	}
 		
 		/*TITULO*/
 		
@@ -145,7 +149,8 @@
 		position: absolute;
 		bottom:5%;
 		left:1.5rem;
-		display:inline-block;}
+		display:inline-block;
+	}
 	
 	
 		
@@ -161,7 +166,7 @@
 		border:none;
 	    outline:none;
 		
-	            }
+	}
 				
 	.button:hover {
         background-color: #C0C0C0; 
@@ -195,17 +200,15 @@
 	}
 	
 	
-	
-	
+		
 	  h3, h4{
 		padding-top:1.6rem;
 		padding-bottom:1rem;
 		text-align: center;
 		font-style: italic;
-	    }
+	}
 		
-		
-		
+			
 	p{
 		font-weight: bold;
 		font-style:italic;
@@ -223,14 +226,16 @@
 		  padding: 1rem 2rem;
 		  font-size:1.8rem;
 		  cursor: pointer;
-	      display: inline-block;}
+	      display: inline-block;
+	}
 									
 		
     .btn:hover{
 		  background-color:#2196F3;
           color:#DCDCDC;
 	      transition:0.8s;
-		  opacity:3}
+		  opacity:3;
+	}
 		  
 		  
 		/*SECCION 3*/
@@ -284,8 +289,7 @@
 		
 	}
 	
-	 
-	 
+	 	 
 	.parrafo{    /* parrafos de las columnas */   
 		text-indent:4rem;
 		/*line-height:3.5rem;*/
@@ -375,7 +379,6 @@
 	form{
 		font-weight: 700;
 		padding:0.8rem 2rem;
-		
 		
 	}
 	

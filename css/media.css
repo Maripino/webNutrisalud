@@ -1,16 +1,16 @@
 
 
 
-@media only screen and (max-width: 1200px){
+@media only screen and (max-width: 1200px){ /* pantalla completa*/
 		
-	body{font-size: 1.6rem;}
+	body{font-size: 1.6rem;}    /* poner tamaño body*/
 
-  h1{font-size:4.6rem;}
+  h1{font-size:4.6rem;}         /* poner tamaño los titulos*/
   h2{font-size:4rem;}
   h3{font-size:3rem;}
-	h4{font-size:3rem;}	
+  h4{font-size:3rem;}	
 	
-	.col-2-of-3{
+	.col-2-of-3{                /* pantalla completa de la seccion contacto, formulario*/
 		width:100%;
 		display:block;
 		float:none;
@@ -19,28 +19,18 @@
 	}
 }
 		
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 900px){  /* pantalla correspondiente a tablets*/
 	
-   body{font-size: 1.4rem;}
+	body{font-size: 1.4rem;}                 /* poner tamaño body*/
 	
-   h1{font-size:4.6rem;}
+   h1{font-size:4.6rem;}                    /* poner tamaño los titulos*/
    h2{font-size:4rem;}
    h3{font-size:3rem;}
    h4{font-size:3rem;}	
    
-   nav{
-		width:100%;
-		position: absolute;
-		right:0;
-		top:0;}
+     
    
-   .container{
-		display:grid;
-		grid-template-columns:repeat(3,1fr); /* repeat(cuantas veces, ancho columna)*/
-		grid-template-rows:repeat(9, 20rem);
-	}
-	
-	.row .col-1-of-4 {
+	.row .col-1-of-4 {  /* seccion 2 taller NutriSalud de 4 columnas*/
 		width:48%;
 		margin: 0;
 		display:inline-block;
@@ -51,12 +41,20 @@
 		display:block;  /*coloca todos los elementos en bloque, ya que se mostraban desordenados*/
 	}
 	
-	.row .col-1-of-2 {
+	.container{                           /* seccion 3 galeria fotos */
+		display:grid;
+		grid-template-columns:repeat(3,1fr); /* repeat(cuantas veces, ancho columna)*/
+		grid-template-rows:repeat(9, 20rem);
+	}
+	
+	
+	.row .col-1-of-2 {   /* seccion 4 piramide de dos columnas*/
 		width:100%;
 		display:block;
 		float:none;
 	}
-	.row .col-1-of-3 {
+	
+	.row .col-1-of-3 {  /* seccion 5  tres columnas y reproductor video*/
 		width:100%;
 		display:block;
 		float:none;
@@ -64,7 +62,7 @@
 		
 	}
 	
-	.img-naranja{      /* tamaño imagen de la naranja en la columna */
+	.img-naranja{      /* seccion 5 tamaño imagen de la imagen naranja en la columna */
 		
 		width:25rem;
 		height:15rem;
@@ -73,23 +71,23 @@
 	
 		
 	
-	.col-2-of-3{
+	.col-2-of-3{      /* seccion 6 dos columnas de tres Formulario*/
 		width:50%;
 		display:block;
 		float:none;
 		margin: 0;
 		
 	}
-	
+	                      /* seccion 7 Footer*/
 	.use{
-		position: initial;
+		position: initial;  /* class use  posicion inicial y en block*/
 	}
 
 	.use>*{
 		display: block;
 	}
 
-	.redes{
+	.redes{                /* class redes */
 		float:none;
 	}
 
@@ -106,19 +104,24 @@
 
 }		
 		
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 600px){   /* pantalla correspondiente a móviles*/
 	
-	body{font-size: 1.2rem;}
+	body{font-size: 1.2rem;}                 /* poner tamaño body*/
 	
-	h1{font-size:4.6rem;}
+	h1{font-size:4.6rem;}                    /* poner tamaño los titulos*/
     h2{font-size:4rem;}
     h3{font-size:3rem;}
     h4{font-size:3rem;}
 	
-	 nav{
-		width:100%;}
 	
-	.container{
+	.row .col-1-of-4 {   /* seccion 2 taller NutriSalud de 4 columnas*/
+		display:block;
+		float:none;
+		width:100%;
+	}
+	
+	
+	.container{         /* seccion 3 galeria fotos */
 		display:grid;
 		grid-template-columns:1fr; /* repeat(cuantas veces, ancho columna)*/
 		grid-template-rows:repeat(20, 20rem);
@@ -129,18 +132,14 @@
 		grid-row: span 1;
 	}
 	
-	.row .col-1-of-4 {
-		display:block;
-		float:none;
-		width:100%;
-	}
 	
-	.row .col-1-of-2 {
+	
+	.row .col-1-of-2 {   /* seccion 4 piramide de dos columnas*/
 		width:100%;
 		display:block;
 		float:none;
 	}
-	.row .col-1-of-3 {
+	.row .col-1-of-3 {   /* seccion 5  tres columnas y reproductor video*/
 		width:100%;
 		display:block;
 		float:none;
@@ -148,15 +147,19 @@
 		
 	}
 	
-	/* .img-naranja{      /* tamaño imagen de la naranja en la columna */
+	 .img-naranja{     /* seccion 5 tamaño imagen de la imagen naranja en la columna */
 		
 		width:30%;
 		height:30%;
 		margin: 0 auto;
-	} */
+	} 
+	
+	#contacto .row{     /* seccion 6 contacto*/
+		margin-top: 1rem; 
+	}
 	
 	
-    .col-2of-3{
+    .col-2of-3{        /* seccion 6 contacto dos columnas de tres Formulario*/
 		width:100%;
 		display:block;
 		float:none;
@@ -164,7 +167,5 @@
 		
 	}
 	
-	#contacto .row{
-		margin-top: 1rem; 
-	}
+	
 }
